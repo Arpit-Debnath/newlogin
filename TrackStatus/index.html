@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Progress Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div class="progress-container">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- new work -->
+
+  <div id="sort">
+    <div class="main-container">
+      <h1>Vaccine Status Tracker</h1>
+  
+      <div class="check_box">
+        <!-- Vaccine Sections by Age -->
+      <div class="child ">
+        <h2>0 - 5 Years</h2>
+        <label class="cb"><input type="checkbox"> BCG</label>
+        <label class="cb"><input type="checkbox"> Hepatitis B</label>
+        <label class="cb"><input type="checkbox"> DTP</label>
+        <label class="cb"><input type="checkbox"> Polio</label>
+      </div>
+  
+      <div class="teen ">
+        <h2>6 - 18 Years</h2>
+        <label class="cb"><input type="checkbox"> MMR</label>
+        <label class="cb"><input type="checkbox"> Tdap</label>
+        <label class="cb"><input type="checkbox"> HPV</label>
+      </div>
+  
+      <div class="adult ">
+        <h2>Adult (18+)</h2>
+        <label class="cb"><input type="checkbox"> COVID-19</label>
+        <label class="cb"><input type="checkbox"> Flu Shot</label>
+        <label class="cb"><input type="checkbox"> Hepatitis A</label>
+        <label class="cb"><input type="checkbox"> Typhoid</label>
+      </div> 
+      </div>
+    </div>
+  
+    <!-- Appointment Booking -->
+    <div class="appointment-box">
+      <h2>Book Appointment</h2>
+  
+      <label for="date">Select Date:</label>
+      <input type="date" id="date">
+  
+      <label for="timeslab">Select Time Slab:</label>
+      <select id="timeslab">
+        <option value="">-- Select Time Slot --</option>
+        <option>09:00 AM - 10:00 AM</option>
+        <option>10:00 AM - 11:00 AM</option>
+        <option>11:00 AM - 12:00 PM</option>
+        <option>01:00 PM - 02:00 PM</option>
+        <option>02:00 PM - 03:00 PM</option>
+        <option>03:00 PM - 04:00 PM</option>
+        <option>04:00 PM - 05:00 PM</option>
+      </select>
+  
+      <button onclick="confirmAppointment()">Confirm</button>
+  
+      <div class="selected-info" id="selectedInfo">
+        <p><strong>Date:</strong> <span id="selectedDate"></span></p>
+        <p><strong>Time Slot:</strong> <span id="selectedTime"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

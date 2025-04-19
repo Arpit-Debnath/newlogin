@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaccine Status Tracker</title>
+  <link rel="stylesheet" href="tr.css" />
+</head>
+<body>
+  <!-- Empty Top Nav / Placeholder -->
+  <header>
+    <!-- Reserved for Nav Bar (Currently Empty) -->
+  </header>
+
+  <!-- Vaccine Tracker Section -->
+  <main class="main-grid">
+    <!-- Left: Vaccine Tracker Section -->
+    <section class="vaccine-tracker-section">
+      <h1>Vaccine Status Tracker</h1>
+    
+      <!-- Family Member Selector -->
+      <div class="family-select">
+        <label for="family">Select Family Member:</label>
+        <select id="family">
+          <option value="">-- Select Member --</option>
+          <option value="self">Self</option>
+          <option value="child1">Child 1</option>
+          <option value="child2">Child 2</option>
+          <option value="parent">Parent</option>
+        </select>
+      </div>
+    
+      <div class="tracker-section">
+        <!-- Vaccine Group Cards Here -->
+        <div class="group-card">
+          <h2>0 - 5 Years</h2>
+          <label><input type="checkbox"> BCG</label>
+          <label><input type="checkbox"> Hepatitis B</label>
+          <label><input type="checkbox"> DTP</label>
+          <label><input type="checkbox"> Polio</label>
+        </div>
+    
+        <div class="group-card">
+          <h2>6 - 18 Years</h2>
+          <label><input type="checkbox"> MMR</label>
+          <label><input type="checkbox"> Tdap</label>
+          <label><input type="checkbox"> HPV</label>
+        </div>
+    
+        <div class="group-card">
+          <h2>Adult (18+)</h2>
+          <label><input type="checkbox"> COVID-19</label>
+          <label><input type="checkbox"> Flu Shot</label>
+          <label><input type="checkbox"> Hepatitis A</label>
+          <label><input type="checkbox"> Typhoid</label>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Right: Appointment Booking Section -->
+    <aside class="appointment-section">
+      <h2>Book Appointment</h2>
+  
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" />
+  
+      <label for="time">Select Time Slot:</label>
+      <select id="time">
+        <option value="">-- Select Time Slot --</option>
+        <option value="9AM">9:00 AM</option>
+        <option value="11AM">11:00 AM</option>
+        <option value="2PM">2:00 PM</option>
+        <option value="4PM">4:00 PM</option>
+      </select>
+  
+      <button onclick="confirmAppointment()">Confirm</button>
+      <p id="confirmationMsg"></p>
+    </aside>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 HealthCare India. All rights reserved.</p>
+  </footer>
+
+  <script src="tr.js"></script>
+</body>
+
+</html>

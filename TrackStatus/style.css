@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  /* .progress-container {
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .progress-bar {
+    position: relative;
+    height: 40px;
+    background: #333;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    background: yellow;
+    height: 100%;
+    width: 0%;
+    transition: width 0.6s ease;
+    border-radius: 25px;
+  }
+  
+  .dots {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 150%;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(-50%);
+    padding: 0 25px;
+    pointer-events: none;
+  }
+  
+  .dot {
+    height: 30px;
+    width: 30px;
+    background: #ffd700;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px yellow;
+    z-index: 2;
+  } */
+
+  /* new work */
+  
+  .main-container {
+    width: 960px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow-y:auto ;
+    height: 70vh;
+  }
+
+  .check_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+  }
+  
+
+  .child ,.teen ,.adult{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: large;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .child h2, .teen h2, .adult h2{
+    padding: 10px;
+    background-color: #2e69b1;
+    color:white;
+    border-radius: 15px;
+    height: 20px;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .child label ,.teen label,.adult label{
+    padding-bottom: 10px;
+    align-self: center;
+  }
+
+  .cb{
+    
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(18, 18, 18);
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .appointment-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+
+  .appointment-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .appointment-box label {
+    font-weight: 600;
+    margin-top: 15px;
+    display: block;
+  }
+
+  .appointment-box input,
+  .appointment-box select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .appointment-box button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .appointment-box button:hover {
+    background-color: #45a049;
+  }
+
+  .selected-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+  }
+
+  .selected-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+  }
+  
+  input[type="date"],
+  select {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #sort{
+    display: flex;
+    flex-direction: row;
+
+  }
