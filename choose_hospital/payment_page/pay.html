@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="pay.css" />
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Payment</h1>
+
+    <div class="fees-section">
+      <div class="fee-item">
+        <span>Vaccine Fee</span>
+        <span id="vaccine-fee">₹500</span>
+      </div>
+      <div class="fee-item">
+        <span>Convenience Charge</span>
+        <span id="convenience-charge">₹50</span>
+      </div>
+      <hr />
+      <div class="fee-item total">
+        <span>Total Payment</span>
+        <span id="total-payment">₹550</span>
+      </div>
+    </div>
+
+    <div class="payment-options">
+      <h2>Select Payment Method</h2>
+      <label>
+        <input type="radio" name="payment" checked />
+        <span>UPI</span>
+      </label>
+      <label>
+        <input type="radio" name="payment" />
+        <span>Debit / Credit Card</span>
+      </label>
+    </div>
+
+    <button id="pay-button">Pay Now</button>
+  </div>
+
+  <script src="pay.js"></script>
+</body>
+</html>
